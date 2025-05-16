@@ -1,25 +1,33 @@
 Package: afnir
 Type: Package
-Title: Wrapper Functions for 'AFNI' (Analysis of Functional 'NeuroImages')
+Title: Wrapper Functions for 'AFNI' (Analysis of Functional
+        'NeuroImages')
 Version: 0.4.6
 Date: 2018-08-15
 Author: John Muschelli <muschellij2@gmail.com>
 Maintainer: John Muschelli <muschellij2@gmail.com>
-Imports:
-    methods,
-    oro.nifti,
-    neurobase (>= 1.27.0)
-Description: Wrapper functions that interface with 'AFNI' (https://afni.nimh.nih.gov/afni),
-    a powerful and commonly-used 'neuroimaging'
-    software, using system commands. The goal is to be able to interface with 'AFNI'
-    completely in R, where you pass R objects of class 'nifti', implemented by
-    package 'oro.nifti', and the function executes an 'AFNI' command and returns an R
-    object of class 'nifti' if desired.
+Imports: methods, oro.nifti, neurobase (>= 1.27.0)
+Description: Wrapper functions that interface with 'AFNI'
+        (https://afni.nimh.nih.gov/afni), a powerful and commonly-used
+        'neuroimaging' software, using system commands. The goal is to
+        be able to interface with 'AFNI' completely in R, where you
+        pass R objects of class 'nifti', implemented by package
+        'oro.nifti', and the function executes an 'AFNI' command and
+        returns an R object of class 'nifti' if desired.
 BugReports: https://github.com/muschellij2/afnir/issues
 SystemRequirements: AFNI <https://afni.nimh.nih.gov/>
 License: GPL-2
 RoxygenNote: 6.1.0
-Suggests: covr,
-  kirby21.t1 (>= 1.7.0),
-  kirby21.fmri (>= 1.7.0)
+Suggests: 
+    covr,
+    kirby21.t1 (>= 1.7.0),
+    kirby21.fmri (>= 1.7.0),
+    testthat
 Encoding: UTF-8
+Repository: Neuroconductor-Devel
+Remotes: 
+    neuroconductor-devel/kirby21.t1@b549887fb573a4951f78fc379938cd8e2d605bd8,
+    neuroconductor-devel/oro.nifti@517ce5312094bf1ecee49bd09024769d3e5d2daa,
+    neuroconductor-devel/kirby21.fmri@55c61a40568d76b6fae49271a9661d46b4fe697a,
+    neuroconductor-devel/neurobase@bed9014475564a8aaf3ddfcb64f3b8439383b99d
+biocViews: 
